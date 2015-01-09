@@ -1,0 +1,435 @@
+/***************************************
+General
+***************************************/
+
+/*
+Header: #111
+Headline: #444
+Text: #616161
+Background light: #eee
+Background dark: #222
+Buttons: #2ecc71
+*/
+
+body {
+	position: relative;
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #616161;
+	line-height: 1.5;
+	text-align: center;  
+    
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+h1 {
+
+}
+
+h2 {
+	padding: 0px 0px 20px 0px;
+	margin: 0;
+	color: #444;
+	font-weight: 300;
+	font-size: 3.5em;
+	text-align: center;
+}
+
+h3 {
+	padding: 0;
+	margin: 0;
+	color: #444;
+    font-weight: 800;
+	text-align: center;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+a {
+    font-size: 0.8em;
+	text-decoration: none;
+	margin: none;
+	padding: none;
+}
+
+a:hover {
+	text-decoration: none;
+	margin: none;
+	padding: none;
+}
+
+ul, li {
+	list-style: none;
+	margin: none;
+	padding: none;
+    -webkit-padding-start: 0px;
+}
+
+.hr {
+    height: 1px;
+    max-width: 100%;
+}
+
+.buttonwhite a {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding: 15px 25px 15px 25px;
+    font-weight: 800;
+    font-size: 1em;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.buttonwhite a:hover {
+    font-size: 1em;
+    color: #444;
+    background-color: #fff;
+}
+
+.buttonblack a {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding: 15px 25px 15px 25px;
+    margin-top: 100px;
+    font-weight: 800;
+    font-size: 1em;
+    text-decoration: none;
+    color: #444;
+    border: 2px solid #444;
+}
+
+.buttonblack a:hover {
+    font-size: 1em;
+    color: #fff;
+    background-color: #444;
+}
+
+/***************************************
+Animation
+***************************************/
+
+.fade {
+   opacity: 1;
+   transition: .25s ease-in-out;
+   -moz-transition: .25s ease-in-out;
+   -webkit-transition: .25s ease-in-out;
+}
+
+.fade:hover {
+    transition: .25s ease-in-out;
+   -moz-transition: .25s ease-in-out;
+   -webkit-transition: .25s ease-in-out;
+}
+
+
+/***************************************
+Header & Navigation
+***************************************/
+.navbar, .navbar-inverse, .navbar-fixed-top {
+    width: 100%;
+	border: none;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.3);
+-moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.3);
+box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.3);
+}
+
+.logo {
+	position: fixed;
+	left: 2%;
+	padding: 10px 0px;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    border-bottom: 3px solid #222;
+    color: #222;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus {
+    color: #9d9d9d;
+}
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:focus,
+.navbar .nav > .active > a:hover {
+    background-color: #222;
+}
+
+.navbar-toggle {
+    background-color: #222;
+}
+
+@media (min-width: 768px) { 
+	.nav {
+    letter-spacing: 1px;
+    font-weight: 600;
+	position: absolute;
+	right: 2%;
+    }
+    
+    .navbar-nav>li>a:hover {
+        padding-top: 15px;
+        padding-bottom: 12px;   
+    }
+}
+
+/***************************************
+1st Hero
+***************************************/
+#hero {
+	position: relative;
+	top: 50px;
+	height: 430px;
+	max-width: 100%;
+	background: url('../images/hero.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.leftarrow {
+    position: absolute;
+    top: 200px;
+    left: 2%;
+    color: white;
+    opacity: 0.5;
+}
+
+.leftarrow:hover {
+    color: white;
+    opacity: 0.8;
+}
+
+.rightarrow {
+    position: absolute;
+    top: 200px;
+    right: 2%;
+    color: white;
+    opacity: 0.5;
+}
+
+.rightarrow:hover {
+    color: white;
+    opacity: 0.8;
+}
+
+#hero img{
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    margin-left: -80px;
+    height: 35%;
+    border: 4px solid #fff;
+    border-radius: 100%
+}
+
+#welcome {
+    background-color: #fff;
+    padding: 150px 0 130px 0;
+}
+
+#description {
+    padding: 0 20% 40px;
+}
+
+.services {
+    border: 1px solid #eee;
+    padding: 30px 20px;
+}
+
+.services:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+.services p {
+    margin-top: 10px;
+    padding: 0;
+    font-weight: 800;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+@media (max-width: 991px) {
+    .services {
+    border: none;
+    }
+}   
+
+/********** Hire Me ***********/
+#hireme {
+    width: 100%;
+    background-color: #222;
+    padding: 30px 0 80px 0;
+}
+
+#hireme h3 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 2em;
+    padding: 40px 10%;
+    line-height: 1.5;
+}
+
+
+/***************************************
+2nd About
+***************************************/
+#about {
+	background: #eee;
+	padding: 100px 0 100px 0;
+	line-height: 1.5;
+}
+
+
+@media (max-width: 768px) {
+    #about p {
+        padding: 0 10% 10% 10%;
+    }
+    
+    .instagram {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media (min-width: 768px) { 
+    #about h3 {
+        text-align: right;
+    }
+
+    #about h4 {
+        text-align: right;
+    }
+
+    #about p {
+        text-align: right;
+        padding-left: 30%;
+    }
+
+    .instagram {
+        width: 60%;
+        text-align: center
+    }
+}
+
+/***************************************
+3rd Skills
+***************************************/
+
+#skills {
+	background: #fff;
+	padding: 110px 0 110px 0;
+	line-height: 1.5;
+}
+
+
+
+/***************************************
+4th Portfolio
+***************************************/
+#portfolio {
+	background: #eee;
+	padding: 100px 0;
+}
+
+
+
+/***************************************
+5th Resumé
+***************************************/
+#cv {
+	background: #fff;
+	padding: 130px 0;
+}
+
+#cv p {
+    padding-bottom: 40px;
+}
+
+
+/***************************************
+6th Contact
+***************************************/
+#contact {
+	background: #222;
+	padding: 130px 0 40px 0;
+}
+
+#contact h2, #contact h3 {
+    color: white;
+}
+
+#contact h3 {
+    padding-bottom: 30px;
+}
+
+#form {
+    padding-bottom: 30px;
+}
+
+.formstyle {
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 20px; 
+    background-color: #eee;
+    border: 1px solid #eee;
+}
+
+
+
+
+
+
+/***************************************
+7th Footer
+***************************************/
+#footer {
+	background-color: #222;
+	padding: 40px 0;
+}
+
+#footer p {
+    padding-bottom: 20px;
+	font-size: 0.9em;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: white;
+}
+
+#social li {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.social {	padding: 0px 10px;
+	color: #fff;
+}
+
+.social:hover {
+	color: #ccc;
+}
+
+
+#up {
+    position: absolute;
+	color: #fff;
+    right: 2%;
+    bottom: 1%
+}
+
+#up:hover {
+	color: #ccc;
+}
+
+@media (max-width: 768px) {
+    #up {
+        position: static;
+    }
+}
+    
+
+
