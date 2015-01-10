@@ -1,180 +1,59 @@
-/***************************************
-General
-***************************************/
-
 /*
 Header: #111
 Headline: #444
 Text: #616161
 Background light: #eee
 Background dark: #222
-Buttons: #2ecc71
 */
-
-body {
-	position: relative;
-	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	color: #616161;
-	line-height: 1.5;
-	text-align: center;  
-    
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-}
-
-h1 {
-
-}
-
-h2 {
-	padding: 0px 0px 20px 0px;
-	margin: 0;
-	color: #444;
-	font-weight: 300;
-	font-size: 3.5em;
-	text-align: center;
-}
-
-h3 {
-	padding: 0;
-	margin: 0;
-	color: #444;
-    font-weight: 800;
-	text-align: center;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-
-p {
-	padding: 0;
-	margin: 0;
-	text-align: center;
-}
-
-a {
-    font-size: 0.8em;
-	text-decoration: none;
-	margin: none;
-	padding: none;
-}
-
-a:hover {
-	text-decoration: none;
-	margin: none;
-	padding: none;
-}
-
-ul, li {
-	list-style: none;
-	margin: none;
-	padding: none;
-    -webkit-padding-start: 0px;
-}
-
-.hr {
-    height: 1px;
-    max-width: 100%;
-}
-
-.buttonwhite a {
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    padding: 15px 25px 15px 25px;
-    font-weight: 800;
-    font-size: 1em;
-    text-decoration: none;
-    color: #fff;
-    border: 2px solid #fff;
-}
-
-.buttonwhite a:hover {
-    font-size: 1em;
-    color: #444;
-    background-color: #fff;
-}
-
-.buttonblack a {
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    padding: 15px 25px 15px 25px;
-    margin-top: 100px;
-    font-weight: 800;
-    font-size: 1em;
-    text-decoration: none;
-    color: #444;
-    border: 2px solid #444;
-}
-
-.buttonblack a:hover {
-    font-size: 1em;
-    color: #fff;
-    background-color: #444;
-}
-
-/***************************************
-Animation
-***************************************/
-
-.fade {
-   opacity: 1;
-   transition: .25s ease-in-out;
-   -moz-transition: .25s ease-in-out;
-   -webkit-transition: .25s ease-in-out;
-}
-
-.fade:hover {
-    transition: .25s ease-in-out;
-   -moz-transition: .25s ease-in-out;
-   -webkit-transition: .25s ease-in-out;
-}
-
 
 /***************************************
 Header & Navigation
 ***************************************/
-.navbar, .navbar-inverse, .navbar-fixed-top {
+.navback {
+    position: fixed;
+    height: 50px;
     width: 100%;
-	border: none;
     background-color: #fff;
-    -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.3);
--moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.3);
-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 1px 10px 0 rgba(0,0,0,0.3);
+-moz-box-shadow: 0 1px 10px 0 rgba(0,0,0,0.3);
+box-shadow: 0 1px 10px 0 rgba(0,0,0,0.3);
+    z-index: 100;
 }
 
 .logo {
 	position: fixed;
 	left: 2%;
-	padding: 10px 0px;
+	padding-top: 12px;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover {
-    border-bottom: 3px solid #222;
+.navbar {
+    position: fixed;
+	right: 2%;
+}
+
+#navigator li {
+    display: inline-block;
+    padding: 13px 15px
+}
+
+#navigator li>a {
+    color: #9d9d9d;
+    font-size: 0.7em;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#navigator li>a:hover {
     color: #222;
 }
 
-.navbar-inverse .navbar-nav>li>a:focus {
-    color: #9d9d9d;
+#navigator li.active{
+    padding-bottom: 10px;
+    border-bottom: 3px solid #222;
 }
 
-.navbar .nav > .active > a,
-.navbar .nav > .active > a:focus,
-.navbar .nav > .active > a:hover {
-    background-color: #222;
-}
-
-.navbar-toggle {
-    background-color: #222;
-}
-
-@media (min-width: 768px) { 
-	.nav {
-    letter-spacing: 1px;
-    font-weight: 600;
-	position: absolute;
-	right: 2%;
-    }
-    
-    .navbar-nav>li>a:hover {
-        padding-top: 15px;
-        padding-bottom: 12px;   
-    }
+#navigator li.active a{
+    color: #222;
 }
 
 /***************************************
@@ -184,7 +63,6 @@ box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.3);
 	position: relative;
 	top: 50px;
 	height: 430px;
-	max-width: 100%;
 	background: url('../images/hero.jpg') no-repeat center center fixed;
     background-size: cover;
 }
@@ -215,7 +93,7 @@ box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.3);
     opacity: 0.8;
 }
 
-#hero img{
+.profile {
     position: absolute;
     top: 350px;
     left: 50%;
@@ -225,18 +103,13 @@ box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.3);
     border-radius: 100%
 }
 
-#welcome {
-    background-color: #fff;
-    padding: 150px 0 130px 0;
+.offsetfix {
+    height: 50px;
 }
-
-#description {
-    padding: 0 20% 40px;
-}
+/******************************************************************************/
 
 .services {
-    border: 1px solid #eee;
-    padding: 30px 20px;
+    padding: 30px 0px;
 }
 
 .services:hover {
@@ -245,27 +118,27 @@ box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.3);
 }
 
 .services p {
-    margin-top: 10px;
+    margin-top: 15px;
     padding: 0;
     font-weight: 800;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-
-@media (max-width: 991px) {
-    .services {
-    border: none;
+@media (max-width: 550px) {
+    .services:hover {
+        background-color: #fff;
+        color: #616161;
     }
-}   
+}
 
-/********** Hire Me ***********/
-#hireme {
+/******************************************************************************/
+.hireme {
     width: 100%;
     background-color: #222;
     padding: 30px 0 80px 0;
 }
 
-#hireme h3 {
+.hireme h2 {
     color: #fff;
     font-weight: 300;
     font-size: 2em;
@@ -277,43 +150,44 @@ box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.3);
 /***************************************
 2nd About
 ***************************************/
-#about {
-	background: #eee;
-	padding: 100px 0 100px 0;
-	line-height: 1.5;
+
+#about .row {
+    margin-top: 15px;
 }
 
-
-@media (max-width: 768px) {
-    #about p {
-        padding: 0 10% 10% 10%;
-    }
-    
-    .instagram {
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
+#about h2, #about p, #about h3 {
+    text-align: right;
 }
 
-@media (min-width: 768px) { 
-    #about h3 {
-        text-align: right;
-    }
+#about p {
+    padding-left: 100px;
+}
 
-    #about h4 {
-        text-align: right;
-    }
+.leftcol {
+    width: 48%;
+    float: left;
+}
 
-    #about p {
-        text-align: right;
-        padding-left: 30%;
-    }
+.rightcol {
+    width: 48%;
+    float: right;
+    text-align: left
+}
 
-    .instagram {
-        width: 60%;
-        text-align: center
+.instagram img {
+    width: 25%;
+}
+
+.pichover:hover {
+    opacity: 0.3;
+    cursor: pointer;;
+}
+
+@media (max-width: 750px) {
+    #about h2, #about h3, #about p {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
     }
 }
 
@@ -321,63 +195,44 @@ box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.3);
 3rd Skills
 ***************************************/
 
-#skills {
-	background: #fff;
-	padding: 110px 0 110px 0;
-	line-height: 1.5;
-}
-
-
 
 /***************************************
 4th Portfolio
 ***************************************/
-#portfolio {
-	background: #eee;
-	padding: 100px 0;
-}
 
 
 
 /***************************************
 5th Resumé
 ***************************************/
-#cv {
-	background: #fff;
-	padding: 130px 0;
-}
 
-#cv p {
-    padding-bottom: 40px;
-}
 
 
 /***************************************
 6th Contact
 ***************************************/
-#contact {
-	background: #222;
-	padding: 130px 0 40px 0;
-}
 
-#contact h2, #contact h3 {
+#contact h1, #contact h2 {
     color: white;
 }
 
-#contact h3 {
+#contact h2 {
     padding-bottom: 30px;
 }
 
-#form {
+.form {
     padding-bottom: 30px;
 }
 
 .formstyle {
-    width: 50%;
-    margin-left: 25%;
+    width: 60%;
     margin-bottom: 20px; 
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
     background-color: #eee;
     border: 1px solid #eee;
+    font-size: 0.8em;
 }
 
 
@@ -412,24 +267,5 @@ box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.3);
 .social:hover {
 	color: #ccc;
 }
-
-
-#up {
-    position: absolute;
-	color: #fff;
-    right: 2%;
-    bottom: 1%
-}
-
-#up:hover {
-	color: #ccc;
-}
-
-@media (max-width: 768px) {
-    #up {
-        position: static;
-    }
-}
-    
-
+ 
 

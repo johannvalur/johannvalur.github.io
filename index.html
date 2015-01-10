@@ -7,7 +7,7 @@
     <title>Jóhann Valur</title>
 
     <!-- Fill in Meta tags later... -->
-    <meta name="description" content="Page description. No longer than 155 characters." />
+    <meta name="description" content="Johann Valur provides services such web design, web development, print design, search engine opimization and drawing mockups" />
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" value="Jóhann Valur">
@@ -19,14 +19,20 @@
     <meta property="og:image" content="http://www.joivalli.com/images/front.jpg" />
     <meta property="og:description" content="My personal Website" />
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <!-- Normalize -->
+    <link href="css/normalize.css" rel="stylesheet">
+    
     <!-- Font Awesome -->
-    <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
+    <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet">   
+      
+    <!-- Custom framework -->
+    <link href="css/framework.css" rel="stylesheet" >
+      
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
+    <link href="css/custom.css" rel="stylesheet" >
+      
+    <!-- Responsive CSS -->
+    <link href="css/responsive.css" rel="stylesheet" >
 
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -37,176 +43,186 @@
     <![endif]-->
   </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="60">
-
+<body>
     <!-- Navigation -->
-    <div class="container">
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="logo" href="#hero"><img src="images/signature.png" alt="Logo" title="JVS" height="30" width="30"></a>
+    <nav>
+        <div class="navback" id="navigator">
+            <div>
+                <a class="logo" href="#hero"><img src="images/signature.png" alt="Logo" title="JVS" height="30" width="30"></a>
             </div>
-            <div id="navbar" class="collapse navbar-collapse">
-              <ul class="nav navbar-nav">
-                <li><a href="#about" class="fade">ABOUT</a></li> 
-                <li><a href="#skills" class="fade">SKILLS</a></li>
-                <li><a href="#portfolio" class="fade">PORTFOLIO</a></li>
-                <li><a href="#cv" class="fade">RESUMÉ</a></li>
-                <li><a href="#contact" class="fade">CONTACT</a></li>
-              </ul>
+            <div class="navbar">
+                <ul>
+                    <li class="fade"><a href="#about" class="fade">ABOUT</a></li>
+                    <li class="fade"><a href="#skills" class="fade">SKILLS</a></li>
+                    <li class="fade"><a href="#portfolio" class="fade">PORTFOLIO</a></li>
+                    <li class="fade"><a href="#cv" class="fade">RESUMÉ</a></li>
+                    <li class="fade"><a href="#contact" class="fade">CONTACT</a></li>
+                </ul>
             </div>
-          </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
 
-    
     <!-- 1st section -->
-    <section class="no-spy" id="no-spy-first">
+    <section>
         <div id="hero">
             <div class="carousel">
                 <a class="leftarrow"><i class="fa fa-chevron-left fa-3x"></i></a>
                 <a class="rightarrow"><i class="fa fa-chevron-right fa-3x"></i></a>
             </div>
-            <img src="images/profile.jpg" alt="Profile">
+            <img class="profile" src="images/profile.jpg" alt="Profile">
         </div>
         
-        <!-- Welcome -->
-        <div id="welcome">
+    <!-- Welcome -->
+        <div class="offsetfix"></div>
+        <div class="background1">
             <div class="container">
-                <h2>WELCOME
-                <br><img src="images/linefff.png" alt="horizontal line" class="hr"></h2>
-                <p id="description">This is my professional website providing info about me, curriculum vitae and my portfolio. Services are listed up below which I focus on for freelance. If you need any info do not hesitate to contact. </p>
-                <div class="services fade col-xs-12 col-md-2 col-md-offset-2">
-                    <i class="fa fa-desktop fa-3x"></i>
-                    <p>Responsive <br>Web Design</p>
-                </div>
-                <div class="services fade col-xs-12 col-md-2 col-md-offset-1 ">
-                    <i class="fa fa-code fa-3x"></i>
-                    <p>Front-end Development</p>
-                </div>
-                <div class="services fade col-xs-12 col-md-2 col-md-offset-1 ">
-                    <i class="fa fa-print fa-3x"></i>
-                    <p>Print Design <br> &nbsp; </p>
-                </div>
-                <div class="clearfix visible-xs-block">
+                <h1>WELCOME</h1>
+                <img src="images/linefff.png" alt="horizontal line" class="hr">
+                <p class="small">This is my professional website providing info about me, curriculum vitae and my portfolio. Services are listed up below which I focus on for freelance. If you need any info do not hesitate to contact. </p>
+                <div class="small">
+                    <div class="row">                    
+                        <div class="fourcol services fade">
+                            <i class="fa fa-desktop fa-3x"></i>
+                            <p>Responsive <br> Web Design</p>
+                        </div>
+                        <div class="fourcol services fade">
+                            <i class="fa fa-code fa-3x"></i>
+                            <p>Front-end <br> Development</p>
+                        </div>
+                        <div class="fourcol services fade">
+                            <i class="fa fa-line-chart fa-3x"></i></i>
+                            <p>Digital <br>Design</p>
+                        </div> 
+                    </div>
+                    <div class="row">                    
+                        <div class="fourcol services fade">
+                            <i class="fa fa-pencil fa-3x"></i></i>
+                            <p>Mockups <br> &nbsp;</p>
+                        </div>
+                        <div class="fourcol services fade">
+                            <i class="fa fa-search fa-3x"></i></i>
+                            <p>SEO <br> &nbsp;</p>
+                        </div>
+                        <div class="fourcol services fade">
+                            <i class="fa fa-print fa-3x"></i>
+                            <p>Print Design <br> &nbsp;</p>
+                        </div>  
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     
+    <!-- Hire Me-->
     <section>
-        <div class="buttonwhite" id="hireme">
+        <div class="hireme">
             <div class="container">
-                <h3>I'M CURRENTLY AVAILABLE FOR FREELANCE WORK! </h3>
-                <a href="mailto:joivalli@joivalli.com" class="fade"><i class="fa fa-check"></i> HIRE ME</a>
+                <div class="buttonwhite">
+                    <h2>I'M CURRENTLY AVAILABLE FOR FREELANCE WORK! </h2>
+                    <a href="mailto:johannvalur@johannvalur.com" class="fade"><i class="fa fa-check"></i> HIRE ME</a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- 2nd section -->
     <section>
-          <div id="about">
-              <div class="container">
-                  <div class="row">
-                    <h2>ABOUT ME
-                        <br><img src="images/lineeee.png" alt="horizontal line" class="hr">
-                    </h2>
-                    <div class="col-xs-12 col-sm-6 col-md-6">
-                        <h3>Jóhann Valur Sævarsson</h3>
-                          <h4>M.Sc. in Engineering Management</h4>
-                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsu</p>
+        <div class="background2" id="about">
+            <div class="container">
+                <h1>ABOUT ME</h1>
+                <img src="images/lineeee.png" alt="horizontal line" class="hr">
+                <div class="row">
+                    <div class="leftcol">
+                        <h2>Jóhann Valur</h2>
+                        <h3>M.Sc. in Engineering Management</h3>
+                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6">
-                        <div class="instagram">
-                                <!-- SnapWidget -->
-        <script src="http://snapwidget.com/js/snapwidget.js"></script>
-        <iframe src="http://snapwidget.com/in/?u=am9pdmFsbGl8aW58MTI1fDN8M3x8bm98NXxmYWRlT3V0fG9uU3RhcnR8bm98eWVz&ve=050115" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;"></iframe>
-                        </div>
+                    <div class="rightcol instagram">
+                        <a href="http://instagram.com/joivalli" target="_blank">
+                            <img class="fade pichover" 
+    src="http://photos-e.ak.instagram.com/hphotos-ak-xpa1/t51.2885-15/10507817_1482779851961884_972634942_n.jpg" alt="instagram">
+                            <img class="fade pichover" src="http://distilleryimage0.ak.instagram.com/a4a26654278d11e3962522000ae80eca_8.jpg" alt="instagram">
+                            <img class="fade pichover" src="http://distilleryimage0.ak.instagram.com/455231ecf88111e2b12422000a1f901a_7.jpg" alt="instagram">
+                            <img class="fade pichover" src="http://distilleryimage2.ak.instagram.com/7b7ae5f26b1411e2917422000a1fb30b_7.jpg" alt="instagram">
+                            <img class="fade pichover" 
+    src="http://distilleryimage6.ak.instagram.com/a6a2c684942511e2a03b22000a1f92d6_7.jpg" alt="instagram">
+                            <img class="fade pichover" 
+    src="http://photos-d.ak.instagram.com/hphotos-ak-xpf1/t51.2885-15/1515687_1425684564335715_1881968354_n.jpg" alt="instagram">
+                            <img class="fade pichover" src="http://distilleryimage11.ak.instagram.com/6b476788e0f711e2932d22000a9e5ae0_7.jpg" alt="instagram">
+                            <img class="fade pichover"
+    src="http://photos-d.ak.instagram.com/hphotos-ak-xpa1/t51.2885-15/10520410_1445391665732099_1777872518_n.jpg" alt="instagram">
+                            <img class="fade pichover" src="http://distilleryimage7.ak.instagram.com/69276aea9ded11e2b05122000a1f92cb_7.jpg" alt="instagram">
+                        </a>
                     </div>
-                  </div>  
-              </div>
+                </div> 
+            </div>
         </div>
     </section>
     
     <!-- 3rd section -->
     <section>
-          <div id="skills">
+        <div class="background1" id="skills">
             <div class="container">
-                <h2>SKILLS
-                    <br><img src="images/linefff.png" alt="horizontal line" class="hr">
-                </h2>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-3 col-sm-offset-1">
-                            <h3>HTML5</h3>
-                            <p>Self eduacated</p>
-                            <br>
-                            <br>
-                            <h3>Photoshop</h3>
-                            <p>Self eduacated</p>
-                            <br>
-                            <br>                    
-                        </div>
-                        <div class="col-xs-12 col-sm-4 ">
-                            <h3>CSS3</h3>
-                            <p>Self eduacated</p>
-                            <br>
-                            <br>
-                            <h3>Illustrator</h3>
-                            <p>Self eduacated</p>
-                            <br>
-                            <br>
-                        </div>
-                        <div class="col-xs-12 col-sm-3">
-                            <h3>Jquery</h3>
-                            <p>Self eduacated</p>
-                            <br>
-                            <br>
-                            <h3>Indesign</h3>
-                            <p>Self eduacated</p>
-                            <br>
-                            <br>
-                        </div>
-                  </div>
-              </div>
+                <h1>SKILLS</h1>
+                <img src="images/linefff.png" alt="horizontal line" class="hr">
+                <div class="row large">
+                    <div class="fourcol">
+                        <h2>HTML5</h2>
+                        <p>Self educated</p>
+                        <br>
+                        <br>
+                        <h2>Photoshop</h2>
+                        <p>Self educated</p>
+                        <br>
+                        <br>                    
+                    </div>
+                    <div class="fourcol">
+                        <h2>CSS3</h2>
+                        <p>Self educated</p>
+                        <br>
+                        <br>
+                        <h2>Illustrator</h2>
+                        <p>Self educated</p>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="fourcol">
+                        <h2>Javascript</h2>
+                        <p>Self educated</p>
+                        <br>
+                        <br>
+                        <h2>Indesign</h2>
+                        <p>Self educated</p>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-
     <!-- 4th section -->
     <section>
-        <div id="portfolio">
+        <div class="background2" id="portfolio">
             <div class="container">
-                <h2>PORTFOLIO
-                    <br><img src="images/lineeee.png" alt="horizontal line" class="hr">
-                </h2>
+                <h1>PORTFOLIO</h1>
+                <br><img src="images/lineeee.png" alt="horizontal line" class="hr">
                 <ul>
-                  <li>First project</li>
-                  <li>Second project</li>
-                  <li>Third project</li>
+                    <li>On it's way...</li>
                 </ul>
             </div>
         </div>
     </section>
-    
-    
+     
     <!-- 5th section -->
     <section>
-        <div id="cv">
+        <div class="background1" id="cv">
             <div class="container">  
-                <div class="headline">
-                  <h2>CURRICULUM VITAE
-                    <br><img src="images/linefff.png" alt="horizontal line" class="hr">
-                  </h2>
-                    <p>To download a printable version, click the button below:</p>
-                  <div class="buttonblack">
-                        <a href="pdf/resume.pdf" class="fade"><i class="fa fa-download"></i>&nbsp RESUMÉ</a>
-                  </div>
+                <h1>CURRICULUM VITAE</h1>
+                <br><img src="images/linefff.png" alt="horizontal line" class="hr">
+                <p>To download a printable version, click the button below:</p>
+                <div class="buttonblack">
+                    <a href="pdf/resume.pdf" class="fade"><i class="fa fa-download"></i>&nbsp RESUMÉ</a>
                 </div>
             </div>
         </div>
@@ -214,16 +230,16 @@
 
     <!-- 6th section -->
     <section>
-        <div id="contact">
+        <div class="background3" id="contact">
             <div class="container">
-                <div id="form">
-                    <h2>GET IN TOUCH
+                <div class="form">
+                    <h1>GET IN TOUCH
                     <br><img src="images/lineeee.png" alt="horizontal line" class="hr">
-                    </h2>  
-                    <h3>JUST DO IT</h3>
-                    <input type="text" placeholder="Write your name" name="inputName" id="inputname" class="form-control formstyle">
+                    </h1>  
+                    <h2>JUST DO IT</h2>
+                    <input type="text" placeholder="Enter Name" name="inputName" id="inputname" class="form-control formstyle">
                     <input type="email" placeholder="Enter E-mail" name="inputEmail" id="inputemail" class="form-control formstyle">
-                    <textarea placeholder="Message ..." name="inputMessage" rows="5" id="inputMessage" class="form-control formstyle"></textarea>
+                    <textarea placeholder="Enter Message ..." name="inputMessage" rows="5" id="inputMessage" class="form-control formstyle"></textarea>
                 </div>
                 <div class="buttonwhite" id="message">
                     <a href="" class="fade"><i class="fa fa-paper-plane"></i>&nbsp; Send Message</a>
@@ -243,8 +259,7 @@
                     <li> <a class="social fade" href="http://www.instagram.com/joivalli" ><i class="fa fa-instagram fa-3x"></i></a></li>           
                     <li> <a class="social fade" href="http://www.linkedin.com/joivalli" ><i class="fa fa-linkedin-square fa-3x"></i></a></li>            
                 </ul>
-                <p>Copyright 2015 &copy; JVS | All Rights Reserved</p>
-                <a id="up" class="fade" href="#hero"><i class="fa fa-chevron-circle-up fa-3x"></i></a> 
+                <p>Copyright 2015 &copy; Jóhann Valur | All Rights Reserved</p>
             </div>
         </div>
     </footer>  
@@ -256,7 +271,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/smoothscroll.js"></script>
+    <script src="js/scroll.js"></script>
 </body>
 </html>
