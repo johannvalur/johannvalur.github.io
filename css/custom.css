@@ -9,64 +9,57 @@ Background dark: #222
 /***************************************
 Header & Navigation
 ***************************************/
+
 .navback {
     position: fixed;
     height: 50px;
     width: 100%;
     background-color: #fff;
-    -webkit-box-shadow: 0 1px 10px 0 rgba(0,0,0,0.3);
--moz-box-shadow: 0 1px 10px 0 rgba(0,0,0,0.3);
-box-shadow: 0 1px 10px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3);
     z-index: 100;
 }
-
 .logo {
-	position: fixed;
-	left: 2%;
-	padding-top: 12px;
+    position: fixed;
+    left: 2%;
+    margin-top: 10px;
 }
-
 .navbar {
     position: fixed;
-	right: 2%;
+    right: 2%;
 }
-
 #navigator li {
     display: inline-block;
-    padding: 13px 15px
+    margin-top: 10px;
 }
-
-#navigator li>a {
+#navigator li a {
+    padding: 20px 15px;
     color: #9d9d9d;
     font-size: 0.7em;
     font-weight: 600;
     letter-spacing: 1px;
 }
-
 #navigator li>a:hover {
     color: #222;
-}
-
-#navigator li.active{
-    padding-bottom: 10px;
+    padding-bottom: 16px;
     border-bottom: 3px solid #222;
 }
-
-#navigator li.active a{
-    color: #222;
+#navigator li.active a {
+    padding-bottom: 16px;
+    background-color: #222;
+    color: #fff;
+    border-bottom: 3px solid #222;
 }
-
 /***************************************
-1st Hero
+Hero
 ***************************************/
+
 #hero {
-	position: relative;
-	top: 50px;
-	height: 430px;
-	background: url('../images/hero.jpg') no-repeat center center fixed;
+    position: relative;
+    top: 50px;
+    height: 430px;
+    background: url('../images/hero.jpg') no-repeat center center fixed;
     background-size: cover;
 }
-
 .leftarrow {
     position: absolute;
     top: 200px;
@@ -74,12 +67,10 @@ box-shadow: 0 1px 10px 0 rgba(0,0,0,0.3);
     color: white;
     opacity: 0.5;
 }
-
 .leftarrow:hover {
     color: white;
     opacity: 0.8;
 }
-
 .rightarrow {
     position: absolute;
     top: 200px;
@@ -87,12 +78,10 @@ box-shadow: 0 1px 10px 0 rgba(0,0,0,0.3);
     color: white;
     opacity: 0.5;
 }
-
 .rightarrow:hover {
     color: white;
     opacity: 0.8;
 }
-
 .profile {
     position: absolute;
     top: 350px;
@@ -102,7 +91,6 @@ box-shadow: 0 1px 10px 0 rgba(0,0,0,0.3);
     border: 4px solid #fff;
     border-radius: 100%
 }
-
 .offsetfix {
     height: 50px;
 }
@@ -111,33 +99,29 @@ box-shadow: 0 1px 10px 0 rgba(0,0,0,0.3);
 .services {
     padding: 30px 0px;
 }
-
 .services:hover {
     background-color: #222;
     color: #fff;
 }
-
 .services p {
     margin-top: 15px;
     padding: 0;
     font-weight: 800;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
 @media (max-width: 550px) {
     .services:hover {
         background-color: #fff;
         color: #616161;
     }
 }
-
 /******************************************************************************/
+
 .hireme {
     width: 100%;
     background-color: #222;
     padding: 30px 0 80px 0;
 }
-
 .hireme h2 {
     color: #fff;
     font-weight: 300;
@@ -145,88 +129,87 @@ box-shadow: 0 1px 10px 0 rgba(0,0,0,0.3);
     padding: 40px 10%;
     line-height: 1.5;
 }
-
-
 /***************************************
-2nd About
+About
 ***************************************/
 
 #about .row {
     margin-top: 15px;
 }
-
-#about h2, #about p, #about h3 {
+#about h2,
+#about p,
+#about h3 {
     text-align: right;
 }
-
 #about p {
     padding-left: 100px;
 }
-
 .leftcol {
     width: 48%;
     float: left;
 }
-
 .rightcol {
     width: 48%;
     float: right;
     text-align: left
 }
-
 .instagram img {
     width: 25%;
 }
-
 .pichover:hover {
     opacity: 0.3;
-    cursor: pointer;;
+    cursor: pointer;
+    ;
 }
-
 @media (max-width: 750px) {
-    #about h2, #about h3, #about p {
-    text-align: center;
-    padding-left: 10%;
-    padding-right: 10%;
+    #about h2,
+    #about h3,
+    #about p {
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
-
 /***************************************
-3rd Skills
+Resumé
 ***************************************/
 
-
 /***************************************
-4th Portfolio
+Skills
 ***************************************/
 
-
-
+#skills h2 {
+    padding: 10px 0;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+#skills h3 {
+    padding: 10px 0;
+}
+#skills h3:hover {
+    cursor: default;
+}
 /***************************************
-5th Resumé
+Portfolio
 ***************************************/
 
-
-
 /***************************************
-6th Contact
+Contact
 ***************************************/
 
-#contact h1, #contact h2 {
+#contact h1,
+#contact h2 {
     color: white;
 }
-
 #contact h2 {
     padding-bottom: 30px;
 }
-
 .form {
     padding-bottom: 30px;
 }
-
 .formstyle {
     width: 60%;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     padding: 10px;
     border: none;
     border-radius: 3px;
@@ -234,38 +217,27 @@ box-shadow: 0 1px 10px 0 rgba(0,0,0,0.3);
     border: 1px solid #eee;
     font-size: 0.8em;
 }
-
-
-
-
-
-
 /***************************************
-7th Footer
+Footer
 ***************************************/
-#footer {
-	background-color: #222;
-	padding: 40px 0;
-}
 
+#footer {
+    background-color: #222;
+}
 #footer p {
     padding-bottom: 20px;
-	font-size: 0.9em;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-	color: white;
+    font-size: 0.9em;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
 }
-
 #social li {
     display: inline-block;
     margin-bottom: 10px;
 }
-
-.social {	padding: 0px 10px;
-	color: #fff;
+.social {
+    padding: 0 10px;
+    color: #fff;
 }
-
 .social:hover {
-	color: #ccc;
+    color: #bdc3c7;
 }
- 
-

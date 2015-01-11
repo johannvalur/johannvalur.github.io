@@ -1,134 +1,109 @@
 /***************************************
 Responsive CSS
 ***************************************/
+
 .container {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
-/* Safari/Chrome, other WebKit */
-    -webkit-box-sizing: border-box;
-/* Firefox, other Gecko */
-    -moz-box-sizing: border-box;
-/* Opera/IE 8+ */    
-    box-sizing: border-box;  
+    /* Safari/Chrome, other WebKit */
+    /* Firefox, other Gecko */
+    /* Opera/IE 8+ */
+    box-sizing: border-box;
 }
-
 .large {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
-/* Safari/Chrome, other WebKit */
-    -webkit-box-sizing: border-box;
-/* Firefox, other Gecko */
-    -moz-box-sizing: border-box;
-/* Opera/IE 8+ */    
-    box-sizing: border-box;  
+    /* Safari/Chrome, other WebKit */
+    /* Firefox, other Gecko */
+    /* Opera/IE 8+ */
+    box-sizing: border-box;
 }
-
 .medium {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
-/* Safari/Chrome, other WebKit */
-    -webkit-box-sizing: border-box;
-/* Firefox, other Gecko */
-    -moz-box-sizing: border-box;
-/* Opera/IE 8+ */    
-    box-sizing: border-box;  
+    /* Safari/Chrome, other WebKit */
+    /* Firefox, other Gecko */
+    /* Opera/IE 8+ */
+    box-sizing: border-box;
 }
-
 .small {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
-/* Safari/Chrome, other WebKit */
-    -webkit-box-sizing: border-box;
-/* Firefox, other Gecko */
-    -moz-box-sizing: border-box;
-/* Opera/IE 8+ */    
-    box-sizing: border-box;  
+    /* Safari/Chrome, other WebKit */
+    /* Firefox, other Gecko */
+    /* Opera/IE 8+ */
+    box-sizing: border-box;
 }
-
-
 @media (max-width: 750px) {
     .container {
         width: 90%;
         margin: 0 auto;
         padding: 0 10px;
     }
-    
     .leftcol {
         width: 100%;
     }
-
     .rightcol {
         width: 100%;
         clear: both;
         text-align: center
     }
-    
     .fourcol {
         width: 100%;
         clear: both;
     }
 }
-
 @media (min-width: 750px) {
     .container {
         width: 95%;
         margin: 0 auto;
         padding: 0 15px;
     }
-    
     .fourcol {
         width: 33.333%;
         float: left;
     }
-    
     .leftcol {
         width: 48%;
     }
-
     .rightcol {
         width: 48%;
         float: right;
         text-align: left
     }
 }
-
-@media (min-width:1500px) {
+@media (min-width: 1500px) {
     .container {
         width: 65%;
         margin: 0 auto;
     }
-        
-
 }
-
 .container:after,
 .row:after,
 .clearfix {
-  content: "";
-  display: table;
-  clear: both; 
+    content: "";
+    display: table;
+    clear: both;
 }
-
-
-
 /* Larger than mobile */
+
 @media (min-width: 400px) {}
-
 /* Larger than phablet */
+
 @media (min-width: 550px) {}
-
 /* Larger than tablet */
+
 @media (min-width: 750px) {}
-
 /* Larger than desktop */
+
 @media (min-width: 1000px) {}
-
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
 
+@media (min-width: 1200px) {}
 /* TVs and larger monitors */
+
 @media (min-width: 1500px) {}
