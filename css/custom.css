@@ -49,6 +49,14 @@ Header & Navigation
     color: #fff;
     border-bottom: 3px solid #222;
 }
+
+@media (max-width: 550px) {
+    .navbar {
+        display: none;
+        visibility: hidden;
+    }
+}
+
 /***************************************
 Hero
 ***************************************/
@@ -66,10 +74,12 @@ Hero
     left: 2%;
     color: white;
     opacity: 0.5;
+    visibility: hidden;
 }
 .leftarrow:hover {
     color: white;
     opacity: 0.8;
+    visibility: hidden;
 }
 .rightarrow {
     position: absolute;
@@ -77,10 +87,12 @@ Hero
     right: 2%;
     color: white;
     opacity: 0.5;
+    visibility: hidden;
 }
 .rightarrow:hover {
     color: white;
     opacity: 0.8;
+    visibility: hidden;
 }
 .profile {
     position: absolute;
@@ -113,6 +125,16 @@ Hero
     .services:hover {
         background-color: #fff;
         color: #616161;
+    }
+    
+    #hide {
+        display: none;
+        visibility: hidden;
+    }
+    
+    .services {
+        display: none;
+        visibility: hidden;
     }
 }
 /******************************************************************************/
