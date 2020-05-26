@@ -1,285 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Jóhann Valur</title>
-
-    <!-- Fill in Meta tags later... -->
-    <meta name="description" content="Johann Valur" />
-
-    <!-- Twitter Card data -->
-    <meta name="twitter:card" value="Jóhann Valur" />
-
-    <!-- Open Graph data -->
-    <meta property="og:title" content="Jóhann Valur" />
-    <meta property="og:type" content="My Website" />
-    <meta property="og:url" content="http://www.joivalli.com/" />
-    <meta property="og:image" content="http://www.joivalli.com/images/front.jpg" />
-    <meta property="og:description" content="My personal Website" />
-
-    <!-- Normalize -->
-    <link href="css/normalize.css" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- Custom framework -->
-    <link href="css/framework.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/custom.css" rel="stylesheet">
-
-    <!-- Responsive CSS -->
-    <link href="css/responsive.css" rel="stylesheet">
-
-    <!-- Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-
-    <!--[if lt IE 9]>
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mr+De+Haviland">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
 </head>
 
-<body>
-    <!-- Navigation -->
-    <nav>
-        <div class="navback" id="navigator">
-            <div>
-                <a class="logo" href="#hero">
-                    <img src="images/signature.png" alt="Logo" title="JVS" height="30" width="30">
-                </a>
-            </div>
-            <div class="navbar">
-                <ul>
-                    <li class="fade"><a href="#about" class="fade">ABOUT</a>
-                    </li>
-                    <li class="fade"><a href="#cv" class="fade">RESUMÉ</a>
-                    </li>
-                    <li class="fade"><a href="#skills" class="fade">SKILLS</a>
-                    </li>
-                    <li class="fade"><a href="#contact" class="fade">CONTACT</a>
-                    </li>
+<body id="page-top">
+    <nav class="navbar navbar-light navbar-expand-md navbar navbar-expand-lg fixed-top" id="mainNav" style="opacity: 0.90;">
+        <div class="container-fluid"><a class="navbar-brand js-scroll-trigger" href="#hero">JV</a><button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
+                value="Menu"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger" href="#resume">RESUMÉ</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger" href="#contact">contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-
-    <!-- Welcome -->
-    <section>
-        <div id="hero">
-            <div class="carousel">
-                <a class="leftarrow"><i class="fa fa-chevron-left fa-3x"></i></a>
-                <a class="rightarrow"><i class="fa fa-chevron-right fa-3x"></i></a>
-            </div>
-            <img class="profile" src="images/profile.jpg" alt="Profile">
-        </div>
-
-        <!-- Welcome -->
-        <div class="offsetfix"></div>
-        <div class="background1">
+    <header class="masthead" style="opacity: 1;filter: grayscale(100%);background-image: url(&quot;assets/img/hero.png&quot;);">
+        <div data-aos="fade" id="hero" class="intro-body" style="opacity: 1;">
             <div class="container">
-                <h1>WELCOME</h1>
-                <img src="images/linefff.png" alt="horizontal line" class="hr">
-                <p class="small">Dummy Text. <br><span id="hide">Services are listed up below which I focus on for freelance.</span> <br>If you need any info do not hesitate to contact.</p>
-                <div class="small">
-                    <div class="row">
-                        <div class="fourcol services fade">
-                            <i class="fa fa-desktop fa-3x"></i>
-                            <p>Responsive
-                                <br>Web Design</p>
-                        </div>
-                        <div class="fourcol services fade">
-                            <i class="fa fa-code fa-3x"></i>
-                            <p>Front-end
-                                <br>Development</p>
-                        </div>
-                        <div class="fourcol services fade">
-                            <i class="fa fa-line-chart fa-3x"></i></i>
-                            <p>Presentation
-                                <br>Design</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="fourcol services fade">
-                            <i class="fa fa-pencil fa-3x"></i></i>
-                            <p>Mockups
-                                <br>&nbsp;</p>
-                        </div>
-                        <div class="fourcol services fade">
-                            <i class="fa fa-search fa-3x"></i></i>
-                            <p>SEO
-                                <br>&nbsp;</p>
-                        </div>
-                        <div class="fourcol services fade">
-                            <i class="fa fa-print fa-3x"></i>
-                            <p>Print Design
-                                <br>&nbsp;</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Hire Me-->
-    <section>
-        <div class="hireme">
-            <div class="container">
-                <h2>I'M CURRENTLY AVAILABLE FOR FREELANCE WORK! </h2>
-                <div class="buttonwhite">
-                    <a href="mailto:johannvalur@johannvalur.com" class="fade"><i class="fa fa-check"></i> HIRE ME</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About -->
-    <section>
-        <div class="background2" id="about">
-            <div class="container">
-                <h1>ABOUT ME</h1>
-                <img src="images/lineeee.png" alt="horizontal line" class="hr">
                 <div class="row">
-                    <div class="leftcol">
-                        <h2>Jóhann Valur</h2>
-                        <h3>M.Sc. in Engineering Management</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                    </div>
-                    <div class="rightcol instagram">
-                        <a href="http://instagram.com/johannvalur" target="_blank">
-                            <img class="fade pichover" src="https://scontent-lht6-1.cdninstagram.com/t51.2885-15/e15/10725004_784799528276221_1440750015_n.jpg?ig_cache_key=OTA0Mjc4MjIwMTMzMDEwOTU5.2" alt="instagram">
-                            <img class="fade pichover" src="https://scontent-lht6-1.cdninstagram.com/t51.2885-15/e15/11269868_1575828889364084_1840639400_n.jpg?ig_cache_key=NDg5MTkzMjY3NjcyODEzNDAz.2" alt="instagram">
-                            <img class="fade pichover" src="https://scontent-lht6-1.cdninstagram.com/t51.2885-15/e15/10507817_1482779851961884_972634942_n.jpg?ig_cache_key=Nzc4MjQyNTY0Mzk5OTkxOTQ4.2" alt="instagram">
-                            <img class="fade pichover" src="https://scontent-lht6-1.cdninstagram.com/t51.2885-15/e15/11330658_834382429986474_875803845_n.jpg?ig_cache_key=NTEwOTAzNjg2NDQ3NjY0NDMy.2" alt="instagram">
-                            <img class="fade pichover" src="https://scontent-lht6-1.cdninstagram.com/t51.2885-15/e15/924619_772696132786363_157408398_n.jpg?ig_cache_key=OTExMDE1MzAwODkyNjI2Nzc5.2" alt="instagram">
-                            <img class="fade pichover" src="https://scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/12501889_260788824265941_1281087875_n.jpg?ig_cache_key=MTIyNDg2MzQ0Mjg5NTUzOTk4MA%3D%3D.2" alt="instagram">
-                            <img class="fade pichover" src="https://scontent-lht6-1.cdninstagram.com/t51.2885-15/e15/11262681_1652240278330325_1397501660_n.jpg?ig_cache_key=NDE4MzM5ODcwNjg2NDgxNTY2.2" alt="instagram">
-                            <img class="fade pichover" src="https://scontent-lht6-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/13642895_1614385815557100_436196473_n.jpg?ig_cache_key=MTI5MDgyNTU1NzI1MjE5NzkyNw%3D%3D.2" alt="instagram">
-                            <img class="fade pichover" src="https://scontent-lht6-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/10576031_563720920473710_665995445_n.jpg?ig_cache_key=MTIwMzA1MjE4MjA4ODYxNzAwNw%3D%3D.2" alt="instagram">
-                        </a>
-                    </div>
+                    <div class="col-lg-8 mx-auto">
+                        <h1 class="pulse animated brand-heading" style="padding: -190px;margin-bottom: -14px;">Welcome</h1>
+                        <p class="intro-text"></p><a href="#about"><button class="btn btn-circle" type="button"><i class="fa fa-angle-double-down animated" href="#about"></i></button></a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="about" class="content-section text-center" style="background-color: #2d2d2d;padding: 100px 0;">
+        <div class="container-fluid">
+            <div class="row text-center" style="min-width: auto;max-width: 1200px;margin: auto;">
+                <div class="col-lg-8 mx-auto" style="margin-right: 0px;margin-left: 0px;">
+                    <h2 data-aos="fade" data-aos-duration="1000" data-aos-delay="300">About ME</h2>
+                    <p data-aos="fade" data-aos-duration="1000" data-aos-delay="300" style="margin: auto;padding: 0px;">“Hi, my name is Jóhann Valur and I hold a M.Sc. in Engineering Management from DTU. I have over 10 years of working experience working in information technology, finance, marketing, sales and customer service. I've spent 5 years in
+                        the telecommunications industry and 5 years in the aviation industry. Here are some of my expertise:</p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="row text-center" data-aos="fade" data-aos-duration="1000" data-aos-delay="300" style="max-width: 950px;min-width: auto;margin: auto;">
+                <div class="col" data-bs-hover-animate="pulse"><i class="fa fa-desktop" style="font-size: 50px;margin: 18px;"></i>
+                    <p>Graphic Design</p>
+                </div>
+                <div class="col" data-bs-hover-animate="pulse"><i class="fa fa-code" style="font-size: 50px;margin: 18px;"></i>
+                    <p>Web Development</p>
+                </div>
+                <div class="col" data-bs-hover-animate="pulse"><i class="fa fa-line-chart" style="font-size: 50px;margin: 18px;"></i>
+                    <p>Business Intelligence</p>
+                </div>
+            </div>
+            <div class="row" data-aos="fade" data-aos-duration="1000" data-aos-delay="300" style="margin: auto;max-width: 950px;">
+                <div class="col" data-bs-hover-animate="pulse"><i class="fa fa-refresh" style="font-size: 50px;margin: 18px;"></i>
+                    <p>System Integrations</p>
+                </div>
+                <div class="col" data-bs-hover-animate="pulse"><i class="fa fa-calendar" style="font-size: 50px;margin: 18px;"></i>
+                    <p>Product &amp; Project Management</p>
+                </div>
+                <div class="col" data-bs-hover-animate="pulse"><i class="fa fa-cloud" style="font-size: 50px;margin: 18px;"></i>
+                    <p>Cloud Engineering</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- CV -->
-    <section>
-        <div class="background1" id="cv">
-            <div class="container">
-                <h1>CURRICULUM VITAE</h1>
-                <br>
-                <img src="images/linefff.png" alt="horizontal line" class="hr">
-                <p>To download a printable version, click the button below:</p>
-                <div class="buttonblack">
-                    <a href="pdf/resume.pdf" class="fade" download><i class="fa fa-download"></i>&nbsp RESUMÉ</a>
-                </div>
-            </div>
+    <section id="resume" class="download-section content-section text-center" style="background-image: url(&quot;assets/img/IMG_0195.jpg&quot;);padding: 360px 0px;background-size: cover;background-position: 0% 70%;">
+        <div class="container" data-aos="fade" data-aos-duration="1000" data-aos-delay="300">
+            <div class="col-lg-8 mx-auto" style="margin-top: -200px;">
+                <h1>RESUMÉ</h1>
+                <p>You can download a copy of my resumé <br>by clicking the download button below:</p><a class="btn btn-primary btn-lg btn-default" role="button" style="border: 2px solid white;padding: 15px 20px;margin-top: 0px;width: auto;" href="assets/johannvalur_cv.pdf">download&nbsp;&nbsp;<i class="fa fa-download"></i></a></div>
         </div>
     </section>
-
-    <!-- Skills -->
-    <section>
-        <div class="background2" id="skills">
-            <div class="container">
-                <h1>SKILLS</h1>
-                <img src="images/lineeee.png" alt="horizontal line" class="hr">
-                <div class="row small">
-                    <h2>Technical</h2>
-                    <div class="fourcol">
-                        <h3>HTML5</h3>
-                        <h3>Photoshop</h3>
-                        <h3>SQL</h3>
-                        <h3>Simul8</h3>
-                        <h3>AutoCAD</h3>
-                    </div>
-                    <div class="fourcol">
-                        <h3>CSS3</h3>
-                        <h3>Illustrator</h3>
-                        <h3>Matlab</h3>
-                        <h3>GAMS</h3>
-                        <h3>Keynote</h3>
-                    </div>
-                    <div class="fourcol">
-                        <h3>Javascript</h3>
-                        <h3>Indesign</h3>
-                        <h3>C++</h3>
-                        <h3>Tacton</h3>
-                        <h3>Inventor</h3>
-                    </div>
-                </div>
-                <div class="row small">
-                    <h2>Languages</h2>
-                    <div class="fourcol">
-                        <h3>Icelandic</h3>
-                    </div>
-                    <div class="fourcol">
-                        <h3>English</h3>
-                    </div>
-                    <div class="fourcol">
-                        <h3>Denglish</h3>
-                    </div>
+    <section id="contact" class="content-section text-center" style="color: rgb(255,255,255);background-color: #2d2d2d;background-image: url(&quot;assets/img/map-image.png&quot;);padding: 100px 20px;">
+        <div class="container" data-aos="fade" data-aos-duration="1000" data-aos-delay="300" style="max-width: 900px;margin: auto;">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Get in TOUCH</h2>
+                    <p>Feel free to leave me a comment to get in touch or to enquire about any further information about me ...</p>
                 </div>
             </div>
+            <form data-bss-recipient="b60c0a93786009941690e21356e50daa" style="max-width: 650px;margin: auto;">
+                <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name"></div>
+                <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
+                <div class="form-group"><textarea class="form-control" name="message" placeholder="Message" rows="14"></textarea></div>
+                <div class="form-group"><button class="btn btn-primary btn-lg" type="submit" style="border: 2px solid white;padding: 15px 20px;margin-top: 20px;width: auto;">send Message&nbsp;&nbsp;<i class="fa fa-send"></i></button></div>
+            </form>
         </div>
     </section>
-
-
-    <!-- Contact -->
-    <section>
-        <div class="background3" id="contact">
+    <div class="footer-dark" style="background-color: rgb(0,0,0);">
+        <footer style="padding: 0px;">
             <div class="container">
-                <div class="form">
-                    <h1>GET IN TOUCH
-                        <br><img src="images/lineeee.png" alt="horizontal line" class="hr">
-                        </h1> 
-                    <h2>JUST DO IT</h2>
-                    <input type="text" placeholder="Enter Name" name="inputName" id="inputname" class="form-control formstyle">
-                    <input type="email" placeholder="Enter E-mail" name="inputEmail" id="inputemail" class="form-control formstyle">
-                    <textarea placeholder="Enter Message ..." name="inputMessage" rows="5" id="inputMessage" class="form-control formstyle"></textarea>
+                <div class="row">
+                    <div class="col item social"><a class="socialicons" href="https://www.facebook.com/johannvalursaevarsson/"><i class="icon ion-social-facebook"></i></a><a class="socialicons" href="https://twitter.com/johannvalur"><i class="icon ion-social-twitter"></i></a><a class="socialicons"
+                            href="https://www.instagram.com/johannvalur/"><i class="icon ion-social-instagram"></i></a><a class="socialicons" href="https://www.linkedin.com/in/johannvalur/"><i class="icon ion-social-linkedin"></i></a></div>
                 </div>
-                <div class="buttonwhite" id="message">
-                    <a href="" class="fade"><i class="fa fa-paper-plane"></i>&nbsp; Send Message</a>
-                </div>
+                <p class="copyright" style="color: rgb(255,255,255);opacity: 0.80;">Jóhann Valur © All Rights Reserved</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div id="footer">
-            <div class="container">
-                <ul id="social">
-                    <li> <a class="social fade" href="http://www.facebook.com/johannvalursaevarsson"><i class="fa fa-facebook fa-3x"></i></a>
-                    </li>
-                    <li> <a class="social fade" href="http://www.twitter.com/johannvalur"><i class="fa fa-twitter fa-3x"></i></a>
-                    </li>
-                    <li> <a class="social fade" href="http://www.instagram.com/johannvalur"><i class="fa fa-instagram fa-3x"></i></a>
-                    </li>
-                    <li> <a class="social fade" href="http://open.spotify.com/user/johannvalur"><i class="fa fa-spotify fa-3x"></i></a>
-                    </li>
-                    <li> <a class="social fade" href="http://linkedin.com/in/johannvalur"><i class="fa fa-linkedin fa-3x"></i></a>
-                    </li>
-                    <li> <a class="social fade" href="skype:johannvalursaevarsson?call"><i class="fa fa-skype fa-3x"></i></a>
-                    </li>
-
-                </ul>
-                <p>Copyright &copy; Jóhann Valur | All Rights Reserved</p>
-            </div>
-        </div>
-    </footer>
-
-
-
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="js/scroll.js"></script>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/smart-forms.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
 </body>
 
 </html>
